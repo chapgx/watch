@@ -55,7 +55,7 @@ func RootRun(args ...string) error {
 	cmd := params[0]
 	for {
 
-		fmt.Print("\x1b[2j\x1b[H")
+		fmt.Print("\x1b[2J\x1b[H")
 
 		var exe *exec.Cmd
 		if len(params) > 1 {
